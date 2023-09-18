@@ -18,12 +18,12 @@ namespace UnitTestingExercise.Tests
             //Start Step 3 here:
 
             //Arrange
-            var instance = new Calculator();
+            Calculator instance = new Calculator();
 
             //Act
                 // call the Add method that is located in the Calculator class
                 // and store its result in a variable named actual
-            var actual = instance.Add(num1, num2, num3);
+            int actual = instance.Add(num1, num2, num3);
 
             //Assert
             Assert.Equal(expected, actual);
@@ -41,9 +41,9 @@ namespace UnitTestingExercise.Tests
             //Start Step 5 here:
 
             //Arrange
-            var instance = new Calculator();
+            Calculator instance = new Calculator();
             //Act
-            var actual = instance.Subtract(minuend, subtrhend);
+            int actual = instance.Subtract(minuend, subtrhend);
             //Assert
             Assert.Equal(expected, actual);
         }
@@ -62,9 +62,9 @@ namespace UnitTestingExercise.Tests
             //Start Step 7 here:
 
             //Arrange
-            var instance = new Calculator();
+            Calculator instance = new Calculator();
             //Act
-            var actual = instance.Multiply(num1, num2);
+            int actual = instance.Multiply(num1, num2);
             //Assert
             Assert.Equal(expected, actual);
         }
@@ -79,9 +79,9 @@ namespace UnitTestingExercise.Tests
         public void DivideTest(int num1, int num2, int expected)
         {
             //Arrange
-            var instance = new Calculator();
+            Calculator instance = new Calculator();
             //Act
-            var actual = instance.Divide(num1, num2);
+            int actual = instance.Divide(num1, num2);
             //Assert
             Assert.Equal(expected, actual);
         }
